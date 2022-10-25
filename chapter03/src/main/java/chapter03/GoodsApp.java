@@ -6,15 +6,17 @@ public class GoodsApp {
 		Goods camera = new Goods();
 		
 		camera.setName("nikon");
-		camera.setPrice(-1);
+		camera.setPrice(4000000);
 		camera.setCountStock(30);
 		camera.setCountSold(50);
-		System.out.println(camera);
+		camera.showInfo();
+		
+		int discountPrice = camera.calcDiscountPrice(0.5);
+		System.out.println("Discount Price:" + discountPrice);
 		
 		Goods g1 = new Goods();
 		Goods g2 = new Goods();
 		Goods g3 = new Goods();
-
 		System.out.println(Goods.countOfGoods);
 	}
 }

@@ -47,8 +47,12 @@ public class Goods {
 	public void setCountSold(int countSold) {
 		this.countSold = countSold;
 	}
-	
-	public String toString() {
-		return "Goods [name=" + name + ", price=" + price + ", countStock=" + countStock + ", countSold=" + countSold+ "]";
+
+	public void showInfo() {
+		System.out.println("Goods [name=" + name + ", price=" + price + ", countStock=" + countStock + ", countSold=" + countSold+ "]");
+	}
+
+	public int calcDiscountPrice(double discountRate) {
+		return (int)(price * discountRate);
 	}
 }
