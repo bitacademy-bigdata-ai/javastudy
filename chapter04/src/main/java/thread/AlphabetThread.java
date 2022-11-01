@@ -13,7 +13,12 @@ public class AlphabetThread extends Thread {
 	public void run() {
 		
 		synchronized(list){
-			list.add(null);
+			list.add("");
+			list.add("");
+			for(int i = 0 ; i < 2; i++) {
+				
+			}
+				
 		}
 		
 		for(char c = 'a'; c <= 'z'; c++) {
